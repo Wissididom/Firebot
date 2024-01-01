@@ -9,4 +9,4 @@ Icon=/usr/bin/Firebotv5/icon.png
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=Network;Multimedia;
+Categories=Network;Utility;
