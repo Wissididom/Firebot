@@ -1,5 +1,5 @@
-VERSION="$(git describe --tags $(git rev-list --tags --max-count=1))"
-DOWNLOAD_LINK="https://github.com/crowbartools/Firebot/releases/download/v5.60.0-beta2/firebot-${VERSION}-linux-x64.tar.gz"
+VERSION="$(curl -fsSL https://api.github.com/repos/crowbartools/Firebot/releases/latest | sed -n 's/.*\"tag_name\": "\(.*\)".*/\1/p')"
+DOWNLOAD_LINK="https://github.com/crowbartools/Firebot/releases/download/${VERSION}/firebot-${VERSION}-linux-x64.tar.gz"
 TEMP_FILE="/tmp/Firebot-${VERSION}"
 INSTALLATION_FOLDER="/usr/bin/Firebotv5"
 SYMBOLIC_LINK="/usr/bin/firebot"
