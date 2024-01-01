@@ -5,7 +5,7 @@ INSTALLATION_FOLDER="/usr/bin/Firebotv5"
 SYMBOLIC_LINK="/usr/bin/firebot"
 echo "Downloading .tar.gz file"
 curl -fsSLo $TEMP_FILE $DOWNLOAD_LINK
-echo "Make sure the installation folder exists"
+echo "Making sure the installation folder exists"
 sudo mkdir -p $INSTALLATION_FOLDER
 echo "Extract Firebot into ${INSTALLATION_FOLDER}"
 sudo tar -xzf $TEMP_FILE -C $INSTALLATION_FOLDER
