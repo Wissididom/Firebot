@@ -7,7 +7,7 @@ echo "Downloading .tar.gz file"
 curl -fsSLo $TEMP_FILE $DOWNLOAD_LINK
 echo "Making sure the installation folder exists"
 sudo mkdir -p $INSTALLATION_FOLDER
-echo "Extract Firebot into ${INSTALLATION_FOLDER}"
+echo "Extracting Firebot into ${INSTALLATION_FOLDER}"
 sudo tar -xzf $TEMP_FILE -C $INSTALLATION_FOLDER
 echo "Downloading icon for the .desktop file into ${INSTALLATION_FOLDER}/icon.png"
 sudo curl -fsSLo "${INSTALLATION_FOLDER}/icon.png" "https://firebot.app/firebot-logo-stroke.png"
