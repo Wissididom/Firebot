@@ -12,7 +12,7 @@ sudo tar -xzf $TEMP_FILE -C $INSTALLATION_FOLDER
 echo "Downloading icon for the .desktop file into ${INSTALLATION_FOLDER}/icon.png"
 sudo curl -fsSLo "${INSTALLATION_FOLDER}/icon.png" "https://firebot.app/firebot-logo-stroke.png"
 echo "Creating symbolic link to be able to omit the path to 'Firebot v5' and for the name to be just firebot"
-sudo ln -s "${INSTALLATION_FOLDER}/Firebot v5" $SYMBOLIC_LINK
+sudo ln -sf "${INSTALLATION_FOLDER}/Firebot v5" $SYMBOLIC_LINK
 echo "Downloading .desktop file to be able to run Firebot without a terminal from a display manager like GDM"
 sudo curl -fsSLo "/usr/share/applications/firebot.desktop" "https://github.com/Wissididom/Firebot/raw/add-linux-installer/.github/firebot.desktop"
 echo "Deleting temporary file"
