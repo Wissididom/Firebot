@@ -7,6 +7,6 @@ curl -Lo $TEMP_FILE $DOWNLOAD_LINK # Download .tag.gz file
 sudo rm -f $INSTALLATION_FOLDER # Delete folder if it already exists (which should never happen)
 sudo mkdir $INSTALLATION_FOLDER # Create folder so tar can extract into it
 sudo tar -xzf $TEMP_FILE -C $INSTALLATION_FOLDER # Extract .tar.gz file into /tmp/Firebot
-sudo ln -s "${INSTALLATION_FOLDER}/Firebot v5" $SYMBOLIC_LINK
-rm $TEMP_FILE
-ls -la $INSTALLATION_FOLDER
+sudo curl -Lo "${INSTALLATION_FOLDER}/icon.png" "https://firebot.app/firebot-logo-stroke.png" # Download icon for use in the .desktop file
+sudo ln -s "${INSTALLATION_FOLDER}/Firebot v5" $SYMBOLIC_LINK # Make symbolic link to be able to find Firebot without specifying a path (to be found in the PATH environment variable)
+rm $TEMP_FILE # Clean up temp file
