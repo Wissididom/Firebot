@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Firebot
+Comment=A powerful all-in-one bot for Twitch
+GenericName=Twitch Chat Bot
+Keywords=Internet;WWW;Bot;Twitch
+Exec=/usr/bin/firebot %u
+Icon=/usr/bin/Firebotv5/icon.png
+Terminal=false
+Type=Application
+StartupNotify=true
+Categories=Network;Utility;
